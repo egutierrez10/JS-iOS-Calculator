@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/io.jpg");
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.container .shell {
+  width: 300px;
+  height: 550px;
+  background-color: red;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50px;
+}
+
+.container .shell .inner {
+  width: 290px;
+  height: 540px;
+  background-color: black;
+  border-radius: 50px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .shell .inner .screen {
+  width: 100%;
+  height: 410px;
+  background-color: #181818;
+  margin: 4em auto 10px auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.container .shell .inner .screen .item1 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 5;
+  color: white;
+  position: relative;
+}
+
+.container .shell .inner .screen .item1 p {
+  font-size: 40px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.container .shell .inner .screen .btn {
+  color: white;
+  background-color: #333;
+  border-radius: 50%;
+  width: 60px;
+  cursor: pointer;
+}
+
+.container .shell .inner .screen .btn p {
+  text-align: center;
+  position: relative;
+  top: 22px;
+}
+
+.container .shell .inner .screen .btn:hover {
+  background-color: #525252;
+}
+
+.container .shell .inner .screen .item2, .container .shell .inner .screen .item3, .container .shell .inner .screen .item4 {
+  background-color: #787979;
+}
+
+.container .shell .inner .screen .item2:hover, .container .shell .inner .screen .item3:hover, .container .shell .inner .screen .item4:hover {
+  background-color: #a2a2a2;
+}
+
+.container .shell .inner .screen .item5, .container .shell .inner .screen .item9, .container .shell .inner .screen .item13, .container .shell .inner .screen .item17, .container .shell .inner .screen .item20 {
+  background-color: #fa8219;
+}
+
+.container .shell .inner .screen .item5:hover, .container .shell .inner .screen .item9:hover, .container .shell .inner .screen .item13:hover, .container .shell .inner .screen .item17:hover, .container .shell .inner .screen .item20:hover {
+  background-color: white;
+  color: #fa8219;
+}
+
+.container .shell .inner .screen .item18 {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 50px;
+  width: 150px;
+}
+
+.container .shell .inner .screen .item18 p {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.container .shell .inner .button {
+  width: 50px;
+  height: 50px;
+  background-color: #1a1a1a;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=main.css.map */

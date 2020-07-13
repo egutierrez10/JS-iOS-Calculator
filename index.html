@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>iOS Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="shell">
+            <div class="inner">
+                <div class="screen">
+                    <div class="item1"><p id="item1">0</p></div>
+                    <div class="btn item2" onclick="clearText()"><p id="ac">AC</p></div>
+                    <div class="btn item3" onclick="negate()"><p>+/-</p></div>
+                    <div class="btn item4" onclick="ConvertDecimal()"><p>%</p></div>
+                    <div class="btn item5" onclick="setOperation('/')"><p>/</p></div>
+                    <div class="btn item6" onclick="setText('7')"><p>7</p></div>
+                    <div class="btn item7" onclick="setText('8')"><p>8</p></div>
+                    <div class="btn item8" onclick="setText('9')"><p>9</p></div>
+                    <div class="btn item9" onclick="setOperation('x')"><p>x</p></div>
+                    <div class="btn item10" onclick="setText('4')"><p>4</p></div>
+                    <div class="btn item11" onclick="setText('5')"><p>5</p></div>
+                    <div class="btn item12" onclick="setText('6')"><p>6</p></div>
+                    <div class="btn item13" onclick="setOperation('-')"><p>-</p></div>
+                    <div class="btn item14" onclick="setText('1')"><p>1</p></div>
+                    <div class="btn item15" onclick="setText('2')"><p>2</p></div>
+                    <div class="btn item16" onclick="setText('3')"><p>3</p></div>
+                    <div class="btn item17" onclick="setOperation('+')"><p>+</p></div>
+                    <div class="btn item18" onclick="setText('0')"><p>0</p></div>
+                    <div class="btn item19" onclick="setText('.')"><p>.</p></div>
+                    <div class="btn item20" onclick="solve()"><p>=</p></div>
+                </div>
+                <div class="button"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/index.js"></script>
+</html>

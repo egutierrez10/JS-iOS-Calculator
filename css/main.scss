@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/io.jpg');
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    .shell{
+        width: 300px;
+        height: 550px;
+        background-color: red;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border-radius: 50px;
+        .inner{
+            width: 290px;
+            height: 540px;
+            background-color: black;
+            border-radius: 50px;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .screen{
+                width: 100%;
+                height: 410px;
+                background-color: rgb(24, 24, 24);
+                margin: 4em auto 10px auto;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                grid-gap: 10px;
+                .item1{
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                    color: white;
+                    position: relative;
+                    p{
+                        font-size: 40px;
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+
+                    }
+                }
+                .btn{
+                    color: white;
+                    background-color: #333;
+                    border-radius: 50%;
+                    width: 60px;
+                    cursor: pointer;
+                    p{
+                        text-align: center;
+                        position: relative;
+                        top: 22px;
+                    }
+                }
+                .btn:hover{
+                    background-color: rgb(82, 82, 82);
+                }
+                .item2,.item3,.item4{
+                    background-color: rgb(120, 121, 121);
+                }
+                .item2:hover,.item3:hover,.item4:hover{
+                    background-color: rgb(162, 162, 162);
+                }
+                .item5,.item9,.item13,.item17,.item20{
+                    background-color: rgb(250, 130, 25);
+                }
+                .item5:hover,.item9:hover,.item13:hover,.item17:hover,.item20:hover{
+                    background-color: white;
+                    color: rgb(250, 130, 25);
+                }
+                .item18{
+                    grid-column-start: 1;
+                    grid-column-end: 3;
+                    border-radius: 50px;
+                    width: 150px;
+                    p{
+                        text-align: left;
+                        margin-left: 30px;
+                    }
+                }
+            }
+            .button{
+                width: 50px;
+                height: 50px;
+                background-color: rgb(26, 26, 26);
+                border-radius: 50%;
+            }
+        }
+    }
+}
